@@ -1,0 +1,224 @@
+{% load static %}
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مصوبه‌ها</title>
+
+    <!-- bootstrap -->
+
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstarp/bootstrap-icons.css' %}">
+
+    <!-- font -->
+    <link rel="stylesheet" href="{% static 'font/IranSansX(Eco)/Webfonts/style.css' %}">
+
+</head>
+
+<body>
+    <!-- بسم الله الرحمن الرحیم -->
+    <!-- اللهم صل علی محمد و آل محمد -->
+    <!-- و عجل فرجهم -->
+    <!-- اللهم صل علی فاطمة و ابیها و بعلها و بنیها و السر المستودع فیها بعدد ما احاط به علمک -->
+    {% for statue in statues %}
+    <div class="row row-cols-1 row-cols-md-2 g-4 m-1">
+
+
+        <div class="col">
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <!-- عنوان مصوبه -->
+                        عنوان مصوبه:
+                        {{ statue.ordernumber }}
+                                            </h5>
+                    <span class="badge bg-secondary">
+                        <!-- شماره جلسه -->
+                        شماره‌ی جلسه:
+                                        </span>
+                    <span class="badge bg-secondary">
+                        <!-- دستور جلسه -->
+                        دستور جلسه:
+                                          </span>
+                    <span class="badge bg-secondary">
+                        <!-- تاریخ جلسه -->
+                        تاریخ جلسه:
+                        {{ statue.date }}                    </span>
+                    <p class="card-text">
+                        <!-- شرح مصوبه -->
+                        {{ statue.description }}
+                        </p>
+
+                    <div class="alert alert-light">
+                        <div>
+                                                  </div>
+
+                        <div>
+                            ✅در کمیته‌ی تطبیق تایید شد!                        </div>
+                    </div>
+
+                    <details>
+                        <summary>
+                            رأی‌ها
+                        </summary>
+
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">عضو</th>
+                                <th scope="col">رأی</th>
+                                <th scope="col">دلیل مخالفت</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+
+                            <!-- ردیف رای -->
+                            <tr>
+                                <th scope="row">
+                                    <!-- شماره عضو -->
+                                    1                                </th>
+                                <td>
+                                    <!-- نام و نام خانوادگی عضو -->
+                                    مهدی بهبانی                                </td>
+                                <td>
+                                    <!-- رای عضو -->
+                                    نامشخص                                </td>
+                                <td>
+                                    <!-- دلیل مخالفت -->
+                                                                    </td>
+                            </tr>
+
+
+                            <!-- ردیف رای -->
+                            <tr>
+                                <th scope="row">
+                                    <!-- شماره عضو -->
+                                    2                                </th>
+                                <td>
+                                    <!-- نام و نام خانوادگی عضو -->
+                                    وحید مصدق                                </td>
+                                <td>
+                                    <!-- رای عضو -->
+                                    نامشخص                                </td>
+                                <td>
+                                    <!-- دلیل مخالفت -->
+                                                                    </td>
+                            </tr>
+
+
+                            <!-- ردیف رای -->
+                            <tr>
+                                <th scope="row">
+                                    <!-- شماره عضو -->
+                                    3                                </th>
+                                <td>
+                                    <!-- نام و نام خانوادگی عضو -->
+                                    مسیب غریب زاده                                </td>
+                                <td>
+                                    <!-- رای عضو -->
+                                    نامشخص                                </td>
+                                <td>
+                                    <!-- دلیل مخالفت -->
+                                                                    </td>
+                            </tr>
+
+
+                            <!-- ردیف رای -->
+                            <tr>
+                                <th scope="row">
+                                    <!-- شماره عضو -->
+                                    4                                </th>
+                                <td>
+                                    <!-- نام و نام خانوادگی عضو -->
+                                    صدیقه مهدویان پور                                </td>
+                                <td>
+                                    <!-- رای عضو -->
+                                    نامشخص                                </td>
+                                <td>
+                                    <!-- دلیل مخالفت -->
+                                                                    </td>
+                            </tr>
+
+
+                            <!-- ردیف رای -->
+                            <tr>
+                                <th scope="row">
+                                    <!-- شماره عضو -->
+                                    5                                </th>
+                                <td>
+                                    <!-- نام و نام خانوادگی عضو -->
+                                    محراب بنافی                                </td>
+                                <td>
+                                    <!-- رای عضو -->
+                                    نامشخص                                </td>
+                                <td>
+                                    <!-- دلیل مخالفت -->
+                                                                    </td>
+                            </tr>
+
+
+                            <!-- ردیف رای -->
+                            <tr>
+                                <th scope="row">
+                                    <!-- شماره عضو -->
+                                    6                                </th>
+                                <td>
+                                    <!-- نام و نام خانوادگی عضو -->
+                                    ارسطو قائدی                                </td>
+                                <td>
+                                    <!-- رای عضو -->
+                                    نامشخص                                </td>
+                                <td>
+                                    <!-- دلیل مخالفت -->
+                                                                    </td>
+                            </tr>
+
+
+                            <!-- ردیف رای -->
+                            <tr>
+                                <th scope="row">
+                                    <!-- شماره عضو -->
+                                    7                                </th>
+                                <td>
+                                    <!-- نام و نام خانوادگی عضو -->
+                                    سید عبدلمحمد کاظمی                                </td>
+                                <td>
+                                    <!-- رای عضو -->
+                                    نامشخص                                </td>
+                                <td>
+                                    <!-- دلیل مخالفت -->
+                                                                    </td>
+                            </tr>
+
+
+
+                                    </tbody>
+                                </table>
+
+                            </details>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- پایان کارت -->
+        {% endfor %}
+
+
+
+
+
+
+
+
+
+
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
